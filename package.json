@@ -1,0 +1,19 @@
+{
+  "name": "@shldhee/doki3-log",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://shldhee@github.com/shldhee/doki3-log.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shldhee/doki3-log/issues"
+  },
+  "homepage": "https://github.com/shldhee/doki3-log#readme"
+}

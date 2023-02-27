@@ -1,11 +1,16 @@
 name: Release Drafter
 
+# on:
+#   pull_request:
+#     branches:
+#       - main
+#     types:
+#       - closed
+
 on:
-  pull_request:
-    branches:
-      - main
-    types:
-      - closed
+  workflow_run:
+    workflows: ["Publish"]
+    types: [completed]
 
 jobs:
   update_release_draft:

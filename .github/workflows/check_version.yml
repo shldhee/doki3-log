@@ -1,3 +1,5 @@
+name: Check package version - release
+
 on:
   push:
     tags:

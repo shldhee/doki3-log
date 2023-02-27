@@ -13,20 +13,12 @@ categories:
     - title: Other Changes
       labels:
         - "*"
-# categories:
-#   - title: "🚀 Features"
-#     labels:
-#       - "🕹 기능"
-#       - "⚒ 리팩토링"
-#   - title: "🐛 Bug Fixes"
-#     labels:
-#       - "🐞 버그"
-exclude-labels:
-  - "⚙️ 설정"
-  - "🌈 프론트"
-  - "🍻 테스트"
-  - "🔥 백엔드"
-  - "📋 문서"
-  - "🚨 이슈"
+# exclude-labels:
+#   - "⚙️ 설정"
+#   - "🌈 프론트"
+#   - "🍻 테스트"
+#   - "🔥 백엔드"
+#   - "📋 문서"
+#   - "🚨 이슈"
 change-template: "- $TITLE @#AUTHOR (#$NUMBER)"
 change-title-escapes: '\

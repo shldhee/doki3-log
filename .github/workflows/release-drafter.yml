@@ -7,17 +7,22 @@ name: Release Drafter
 #     types:
 #       - closed
 
-on:
-  workflow_run:
-    workflows: ["Publish"]
-    types: [completed]
+# on:
+#   workflow_run:
+#     workflows: ["Publish"]
+#     types: [completed]
 
-jobs:
-  update_release_draft:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: release-drafter/release-drafter@v5
-        with:
-          config-name: release-drafter-config.yml
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+on:
+  push:
+    branches:
+      - "main"
+
+  jobs:
+    update_release_draft:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: release-drafter/release-drafter@v5
+          with:
+            config-name: release-drafter-config.yml
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

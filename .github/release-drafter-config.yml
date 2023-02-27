@@ -16,13 +16,13 @@ version-resolver:
   major:
     labels:
       - "major"
-      - Semver-Major
-      - breaking-change
+      - "Semver-Major"
+      - "breaking-change"
   minor:
     labels:
       - "minor"
-      - Semver-Minor
-      - enhancement
+      - "Semver-Minor"
+      - "enhancement"
   patch:
     labels:
       - "patch"

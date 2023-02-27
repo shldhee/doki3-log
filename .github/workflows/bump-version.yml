@@ -13,6 +13,10 @@ jobs:
       - name: "Automated Version Bump"
         id: version-bump
         uses: "phips28/gh-action-bump-version@master"
+        with:
+          major-wording: "MAJOR,cut-major"
+          minor-wording: "add,Adds,new"
+          patch-wording: "patch,fixes"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: "Output Step"

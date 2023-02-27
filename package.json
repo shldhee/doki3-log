@@ -1,6 +1,6 @@
 {
-  "name": "@shldhee/doki3-log",  
-  "version": "1.1.0",
+  "name": "@shldhee/doki3-log",
+  "version": "1.1.1",
   "description": "",
   "main": "index.js",
   "scripts": {

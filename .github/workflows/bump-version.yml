@@ -7,14 +7,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: git config --global user.email "shldhee@yahoo.co.kr"
-      - run: git config --global user.name "shldhee"
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-      - run: npm version patch
-      - run: git push origin main --tags
+      # - run: git config --global user.email "shldhee@yahoo.co.kr"
+      # - run: git config --global user.name "shldhee"
+      # - uses: actions/setup-node@v3
+      #   with:
+      #     node-version: 16
+      # - run: npm version patch
+      # - run: git push origin main --tags
       # - uses: actions/upload-artifact@v3
       #   with:
       #     name: src
       #     path: ./
+      - name: "Automated Version Bump"
+        uses: "phips28/gh-action-bump-version@master"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        tag-prefix: "v"
+      - name: "Output Step"
+        env:
+          NEW_TAG: ${{ steps.version-bump.outputs.newTag }}
+        run: echo "new tag $NEW_TAG"

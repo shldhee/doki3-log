@@ -1,18 +1,17 @@
-
 name-template: "v$RESOLVED_VERSION 🌈"
 tag-template: "v$RESOLVED_VERSION"
 categories:
-    - title: Breaking Changes 🛠
-      labels:
-        - Semver-Major
-        - breaking-change
-    - title: Exciting New Features 🎉
-      labels:
-        - Semver-Minor
-        - enhancement
-    - title: Other Changes
-      labels:
-        - "*"
+  - title: Breaking Changes 🛠
+    labels:
+      - Semver-Major
+      - breaking-change
+  - title: Exciting New Features 🎉
+    labels:
+      - Semver-Minor
+      - enhancement
+  - title: Other Changes
+    labels:
+      - "*"
 # exclude-labels:
 #   - "⚙️ 설정"
 #   - "🌈 프론트"
@@ -21,4 +20,4 @@ categories:
 #   - "📋 문서"
 #   - "🚨 이슈"
 change-template: "- $TITLE @#AUTHOR (#$NUMBER)"
-change-title-escapes: '\
+change-title-escapes: '\'

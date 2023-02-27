@@ -7,15 +7,10 @@ name: Release Drafter
 #     types:
 #       - closed
 
-# on:
-#   workflow_run:
-#     workflows: ["Publish"]
-#     types: [completed]
-
 on:
-  push:
-    branches:
-      - "main"
+  workflow_run:
+    workflows: ["Publish"]
+    types: [completed]
 
 jobs:
   update_release_draft:

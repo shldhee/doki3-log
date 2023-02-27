@@ -21,3 +21,7 @@ categories:
 #   - "🚨 이슈"
 change-template: "- $TITLE @#AUTHOR (#$NUMBER)"
 change-title-escapes: '\'
+template: |
+  ## Changes
+
+  $CHANGES

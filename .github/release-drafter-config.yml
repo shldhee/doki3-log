@@ -12,6 +12,21 @@ categories:
   - title: Other Changes
     labels:
       - "*"
+version-resolver:
+  major:
+    labels:
+      - "major"
+      - Semver-Major
+      - breaking-change
+  minor:
+    labels:
+      - "minor"
+      - Semver-Minor
+      - enhancement
+  patch:
+    labels:
+      - "patch"
+  default: patch
 # exclude-labels:
 #   - "⚙️ 설정"
 #   - "🌈 프론트"
@@ -19,7 +34,7 @@ categories:
 #   - "🔥 백엔드"
 #   - "📋 문서"
 #   - "🚨 이슈"
-change-template: "- $TITLE @#AUTHOR (#$NUMBER)"
+change-template: "- $TITLE @$AUTHOR (#$NUMBER)"
 change-title-escapes: '\'
 template: |
   ## Changes
